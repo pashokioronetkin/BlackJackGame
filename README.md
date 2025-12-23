@@ -21,7 +21,7 @@
 
 ## 📦 Установка
 ### Способ 1: Скачать APK
-1. Перейдите в [Releases](https://github.com/pashokioronetkin/BlackjackGame/releases)
+1. Перейдите в [Releases](https://github.com/pashokioronetkin/BlackjackGame)
 2. Скачайте последний `app-release.apk`
 3. Установите на Android устройство
 
@@ -30,6 +30,7 @@
 git clone https://github.com/YOUR_USERNAME/Blackjack-Android-Game.git
 cd Blackjack-Android-Game
 # Откройте в Android Studio и запустите
+```
 
 🛠️ Технологии
 Язык: Java
@@ -39,7 +40,7 @@ Min SDK: 24 (Android 7.0)
 Сборка: Gradle
 
 📁 Структура проекта
-text
+```text
 BlackJackGame/
 ├── app/
 │   ├── src/main/java/com/example/blackjack/
@@ -52,6 +53,7 @@ BlackJackGame/
 │   └── build.gradle
 ├── README.md
 └── .gitignore
+```
 
 🚀 Как играть
 1. Нажмите "НОВАЯ ИГРА"
