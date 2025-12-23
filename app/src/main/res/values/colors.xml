@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_blue">#2196F3</color>
+    <color name="primary_dark_blue">#1976D2</color>
+    <color name="secondary_orange">#FF9800</color>
+    <color name="secondary_dark_orange">#F57C00</color>
+
+    <color name="button_green">#4CAF50</color>
+    <color name="button_green_pressed">#1B5E20</color>
+    <color name="button_red">#F44336</color>
+    <color name="button_red_pressed">#B71C1C</color>
+    <color name="button_blue">#2196F3</color>
+    <color name="button_blue_pressed">#0D47A1</color>
+
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_gold">#FFD54F</color>
+    <color name="text_light_blue">#4FC3F7</color>
+    <color name="text_green">#81C784</color>
+    <color name="text_orange">#FF9800</color>
+
+    <color name="bg_dark">#1A1A2E</color>
+    <color name="bg_gradient_start">#0F2027</color>
+    <color name="bg_gradient_center">#203A43</color>
+    <color name="bg_gradient_end">#2C5364</color>
+
+    <color name="card_red">#FF5252</color>
+    <color name="card_black">#212121</color>
+</resources>

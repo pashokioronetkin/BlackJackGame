@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_large"
+    android:background="@drawable/bg_gradient"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <!-- Заголовок с иконками -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/padding_large">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="♠️"
+            android:textSize="@dimen/text_size_xxlarge"
+            android:textColor="@color/text_gold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_blackjack"
+            android:textSize="@dimen/text_size_title"
+            android:textColor="@color/text_white"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="♣️"
+            android:textSize="@dimen/text_size_xxlarge"
+            android:textColor="@color/text_light_blue"/>
+    </LinearLayout>
+
+    <!-- Карты дилера -->
+    <LinearLayout
+        style="@style/CardBlockStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/padding_medium">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_dealer"
+            android:textSize="@dimen/text_size_xlarge"
+            android:textColor="@color/text_gold"
+            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/padding_small"/>
+
+        <TextView
+            android:id="@+id/tvDealerCards"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_cards"
+            android:textSize="@dimen/text_size_large"
+            android:textColor="@color/text_white"
+            android:fontFamily="monospace"/>
+    </LinearLayout>
+
+    <!-- Карты игрока -->
+    <LinearLayout
+        style="@style/CardBlockStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/padding_large">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_player"
+            android:textSize="@dimen/text_size_xlarge"
+            android:textColor="@color/text_light_blue"
+            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/padding_small"/>
+
+        <TextView
+            android:id="@+id/tvPlayerCards"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_cards"
+            android:textSize="@dimen/text_size_large"
+            android:textColor="@color/text_white"
+            android:fontFamily="monospace"/>
+    </LinearLayout>
+
+    <!-- Счет -->
+    <TextView
+        android:id="@+id/tvScore"
+        style="@style/CardBlockStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_score"
+        android:textSize="@dimen/text_size_xlarge"
+        android:textColor="@color/text_green"
+        android:textStyle="bold"
+        android:layout_marginBottom="@dimen/padding_large"/>
+
+    <!-- Результат -->
+    <TextView
+        android:id="@+id/tvResult"
+        style="@style/CardBlockStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="@dimen/text_size_xlarge"
+        android:textColor="@color/text_orange"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/padding_large"/>
+
+    <!-- Кнопки действий -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/padding_medium">
+
+        <Button
+            android:id="@+id/btnHit"
+            style="@style/MyButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height"
+            android:layout_weight="1"
+            android:layout_marginEnd="@dimen/padding_small"
+            android:text="@string/button_hit"
+            android:textSize="@dimen/text_size_medium"
+            app:backgroundTint="@color/button_green"
+            android:background="@null"
+            android:textColor="@color/text_white"
+            app:elevation="@dimen/elevation_medium"/>
+
+        <Button
+            android:id="@+id/btnStand"
+            style="@style/MyButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/padding_small"
+            android:text="@string/button_stand"
+            android:textSize="@dimen/text_size_medium"
+            app:backgroundTint="@color/button_red"
+            android:background="@null"
+            android:textColor="@color/text_white"
+            app:elevation="@dimen/elevation_medium"/>
+    </LinearLayout>
+
+    <!-- Кнопка новой игры -->
+    <Button
+        android:id="@+id/btnNewGame"
+        style="@style/MyButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:text="@string/button_new_game"
+        android:textSize="@dimen/text_size_large"
+        app:backgroundTint="@color/button_blue"
+        android:background="@null"
+        android:textColor="@color/text_white"
+        app:elevation="@dimen/elevation_medium"/>
+
+</LinearLayout>

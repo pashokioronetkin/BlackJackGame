@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Blackjack</string>
+
+    <string name="title_blackjack">BLACKJACK</string>
+    <string name="label_dealer">Дилер</string>
+    <string name="label_player">Игрок</string>
+    <string name="label_score">Счет: %d</string>
+    <string name="label_cards">Карты:</string>
+
+    <string name="button_hit">ВЗЯТЬ КАРТУ</string>
+    <string name="button_stand">ХВАТИТ</string>
+    <string name="button_new_game">НОВАЯ ИГРА</string>
+
+    <string name="result_bust">Перебор! Вы проиграли.</string>
+    <string name="result_win">Поздравляем! Вы выиграли!</string>
+    <string name="result_lose">Дилер выиграл.</string>
+    <string name="result_tie">Ничья!</string>
+
+    <string name="dealer_hidden">\?\?</string>
+</resources>
