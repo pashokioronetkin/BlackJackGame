@@ -21,13 +21,13 @@
 
 ## 📦 Установка
 ### Способ 1: Скачать APK
-1. Перейдите в [Releases](https://github.com/pashokioronetkin/BlackjackGame)
+1. Перейдите в (https://github.com/pashokioronetkin/BlackjackGame)
 2. Скачайте последний `app-release.apk`
 3. Установите на Android устройство
 
 ### Способ 2: Сборка из исходников
 ```bash
-git clone https://github.com/YOUR_USERNAME/Blackjack-Android-Game.git
+git clone (https://github.com/pashokioronetkin/BlackjackGame.git
 cd Blackjack-Android-Game
 # Откройте в Android Studio и запустите
 ```
